@@ -39,7 +39,7 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
         {
             m_Count += 1;
             if (m_Text != null)
-                m_Text.text = m_Count.ToString();
+                m_Text.Text = m_Count.ToString();
         }
     }
 }
