@@ -10,20 +10,22 @@ public class Timer : MonoBehaviour
     public float startingTime = 10f;
 
     [SerializeField] TextMeshProUGUI countdownText;
+
     void Start()
     {
         currentTime = startingTime;
     }
+
     void Update()
     {
-       
-        currentTime =- 1 * Time.deltaTime;
-        countdownText.text = currentTime.ToString();
+        currentTime -= Time.deltaTime;
+
+        // Display as int
+        countdownText.text = Mathf.FloorToInt(currentTime).ToString();
 
         if (currentTime <= 0)
         {
-            currentTime = 0;
-
+            currentTime = startingTime;
         }
     }
 }
