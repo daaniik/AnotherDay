@@ -3,17 +3,29 @@ using UnityEngine;
 
 public class FadeToBlack : MonoBehaviour
 {
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public bool FadeOnLoose;
     public float FadeDuration = 2;
     public Color FadeColor;
     private Renderer rend;
+    public GameObject taskFailedScript;
 
     void Update()
     {
         rend = GetComponent<Renderer>();
-        if (FadeOnLoose )
+        //if (FadeOnLoose == true)
+        //{
+        //    fadeOut();
+        //}
+        if (FadeOnLoose == true) 
+        {
             fadeOut();
+            taskFailedScript.GetComponent<TaskFailedScript>().fadeIn2 = true;
+            FadeOnLoose = false;
+           // GetComponent<TaskFailedScript>().fadeIn2 = true;
+        }
+            
     }
     public void fade(float alphaIn, float alphaOut)
     {
