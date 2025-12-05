@@ -5,12 +5,12 @@ public class SimpleDishCleaner : MonoBehaviour
     [SerializeField] GameObject cleanDishPrefab;
     [SerializeField] float scrubTimeNeeded = 3f;
 
-    float scrubTimer = 0f;
-    bool isScrubbing = false;
+    public float scrubTimer = 0f;
+    public bool isScrubbing = false;
 
     void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.CompareTag("Brush")) // tag your brush
+        if (other.gameObject.CompareTag("Brush"))
         {
             isScrubbing = true;
         }
