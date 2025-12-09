@@ -99,11 +99,11 @@ LODGroup:
   m_AnimateCrossFading: 0
   m_LastLODIsBillboard: 0
   m_LODs:
-  - screenRelativeHeight: 0.01935709
+  - screenRelativeHeight: 0.009519389
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 4448807103177228352}
-  m_Enabled: 0
+  m_Enabled: 1
 --- !u!23 &4448807103177228352 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: f4c581ae4532ba542962bceca75576f0, type: 3}
