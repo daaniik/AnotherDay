@@ -16,6 +16,7 @@ public class GrowablePlant : MonoBehaviour
             if (timer >= waterTimeNeeded)
             {
                 GameObject bigPlant = Instantiate(bigPlantPrefab, transform.position, transform.rotation);
+                TaskManager.Instance.AddPlant();
                 Destroy(gameObject);
             }
         }

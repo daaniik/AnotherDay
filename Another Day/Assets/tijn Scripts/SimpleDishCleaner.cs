@@ -30,7 +30,9 @@ public class SimpleDishCleaner : MonoBehaviour
             if (scrubTimer >= scrubTimeNeeded)
             {
                 Instantiate(cleanDishPrefab, transform.position, transform.rotation);
+                TaskManager.Instance.AddDish();
                 Destroy(gameObject);
+
             }
         }
         else
