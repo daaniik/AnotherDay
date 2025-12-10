@@ -7,6 +7,7 @@ TagManager:
   - Anchor
   - Brush
   - Clothing
+  - WateringCan
   layers:
   - Default
   - TransparentFX
