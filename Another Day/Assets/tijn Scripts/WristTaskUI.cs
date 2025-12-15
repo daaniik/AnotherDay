@@ -1,37 +1,19 @@
 ﻿using UnityEngine;
-using TMPro;
+using UnityEngine.InputSystem;
 
 public class WristTaskUI : MonoBehaviour
 {
-    [SerializeField] Transform leftWrist;        //  Drag Left Hand Controller here
-    [SerializeField] Canvas wristCanvas;         //  Drag your UI Canvas here
-    [SerializeField] float showAngle = 45f;
-    [SerializeField] float hideDelay = 0.5f;
+    [SerializeField] Canvas wristCanvas;
 
-    Transform head;
-    float hideTimer;
+    // Change this if you use right hand or different button
+    public InputActionProperty showButton; // Drag "X Button" action here
 
-    void Start()
+    void OnEnable() => showButton.action.performed += ToggleUI;
+    void OnDisable() => showButton.action.performed -= ToggleUI;
+
+    void ToggleUI(InputAction.CallbackContext ctx)
     {
-        head = Camera.main.transform;
-        wristCanvas.gameObject.SetActive(false);   //  fixed: wristCanvas instead of wrist
-    }
-
-    void Update()
-    {
-        Vector3 toWrist = leftWrist.position - head.position;
-        float angle = Vector3.Angle(head.forward, toWrist);
-
-        if (angle < showAngle)
-        {
-            wristCanvas.gameObject.SetActive(true);
-            hideTimer = 0f;
-        }
-        else
-        {
-            hideTimer += Time.deltaTime;
-            if (hideTimer >= hideDelay)
-                wristCanvas.gameObject.SetActive(false);
-        }
+        bool currentlyActive = wristCanvas.gameObject.activeSelf;
+        wristCanvas.gameObject.SetActive(!currentlyActive);
     }
 }
