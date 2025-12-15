@@ -1440,7 +1440,7 @@ Animator:
   m_GameObject: {fileID: 643536517}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e4933093885c9e34caf60c281142d829, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1471,8 +1471,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.15, y: 0.17, z: 0.24}
-  m_Center: {x: -0.23, y: 0.02, z: 0}
+  m_Size: {x: 0.07015608, y: 0.11452627, z: 0.1788625}
+  m_Center: {x: -0.21804617, y: 0.04147196, z: 0.030568756}
 --- !u!114 &643536520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2204,8 +2204,8 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings:
       - m_Name: 
-        m_Id: 86a0c6ba-8080-4e27-82b6-2ddaabab27b1
-        m_Path: <XRSimulatedController>{LeftHand}/gripButton
+        m_Id: 7beff066-cd56-49c0-874d-3cb737c3d7ff
+        m_Path: <XRController>{LeftHand}/primaryButton
         m_Interactions: 
         m_Processors: 
         m_Groups: 
