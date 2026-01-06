@@ -395,14 +395,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: House
       objectReference: {fileID: 0}
-    - target: {fileID: 5779778895657393488, guid: 41531a1c509b6bc4a86860d713c1333d, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: dc633fe8183c20344b3d3d031b32a8ae, type: 2}
-    - target: {fileID: 5916581674415486468, guid: 41531a1c509b6bc4a86860d713c1333d, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 411e90481f67d264db33291db6667272, type: 2}
     - target: {fileID: 8246326147133474133, guid: 41531a1c509b6bc4a86860d713c1333d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
