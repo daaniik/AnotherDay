@@ -6,7 +6,7 @@ public class WristTaskUI : MonoBehaviour
     [SerializeField] Canvas wristCanvas;
     public InputActionProperty showButton; 
 
-    void Start() => wristCanvas.gameObject.SetActive(false);
+   // void Start() => wristCanvas.gameObject.SetActive(false);
 
     void OnEnable() => showButton.action.performed += ToggleUI;
     void OnDisable() => showButton.action.performed -= ToggleUI;

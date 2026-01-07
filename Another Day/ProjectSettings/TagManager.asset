@@ -8,6 +8,7 @@ TagManager:
   - Brush
   - Clothing
   - WateringCan
+  - Trash
   layers:
   - Default
   - TransparentFX
