@@ -4,6 +4,7 @@ using TMPro;
 public class TaskManager : MonoBehaviour
 {
     public static TaskManager Instance;
+    public bool AllTasksComplete => clothesDone >= clothesNeeded && dishesDone >= dishesNeeded && plantsDone >= plantsNeeded && trashDone >= trashNeeded;
 
     [Header("Task Counts")]
     public int clothesNeeded = 5;

@@ -13,28 +13,23 @@ public class TaskFailedScript : MonoBehaviour
     {
         fadeOut = true;
     }
-    private void Update()
+   
+    void Update()
     {
         if (fadeIn2)
         {
             if (MyUIGroup.alpha < 1)
             {
                 MyUIGroup.alpha += Time.deltaTime;
-                if (MyUIGroup.alpha >= 1)
-                {
-                    fadeIn2 = false;
-                }
+                if (MyUIGroup.alpha >= 1) fadeIn2 = false;
             }
         }
         if (fadeOut)
         {
-            if (MyUIGroup.alpha >= 0)
+            if (MyUIGroup.alpha > 0) 
             {
                 MyUIGroup.alpha -= Time.deltaTime;
-                if (MyUIGroup.alpha == 0)
-                {
-                    fadeOut = false;
-                }
+                if (MyUIGroup.alpha <= 0) fadeOut = false;
             }
         }
     }
