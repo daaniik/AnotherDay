@@ -35269,7 +35269,7 @@ PrefabInstance:
     - target: {fileID: 2334181466666898864, guid: 76f3f783f727fd947b3965e4d73eca00, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 5b1beb7cc96f50a40b455e55d4215de0, type: 2}
+      objectReference: {fileID: 2100000, guid: a29aaa1d69c4f8e41a9631e24ef7e667, type: 2}
     - target: {fileID: 5849996219953067958, guid: 76f3f783f727fd947b3965e4d73eca00, type: 3}
       propertyPath: m_Name
       value: PictureFrame
