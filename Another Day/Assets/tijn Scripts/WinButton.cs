@@ -5,7 +5,7 @@ using System.Collections;
 public class WinButton : MonoBehaviour
 {
     [SerializeField] Button winButton;
-    [SerializeField] Image buttonImage; // Drag Button's Image here
+    [SerializeField] Image buttonImage; 
     [SerializeField] TaskFailedScript winUI;
 
     void Start()
