@@ -2,31 +2,51 @@ using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Interactors;
 
-public class RightHandGrabAnim : MonoBehaviour
+public class ObjectGrabAnimator : MonoBehaviour
 {
-    [SerializeField] Animator handAnimator;
+    Animator animator;
     XRBaseInteractor interactor;
 
-    void Awake() => interactor = GetComponent<XRBaseInteractor>();
+    void Awake()
+    {
+        animator = GetComponent<Animator>();
+        interactor = GetComponent<XRBaseInteractor>();
+    }
 
     void OnEnable()
     {
-        interactor.hoverEntered.AddListener(Hover);
-        interactor.hoverExited.AddListener(Unhover);
-        interactor.selectEntered.AddListener(Grab);
-        interactor.selectExited.AddListener(Ungrab);
+        interactor.selectEntered.AddListener(OnGrab);
+        interactor.selectExited.AddListener(OnRelease);
     }
 
     void OnDisable()
     {
-        interactor.hoverEntered.RemoveListener(Hover);
-        interactor.hoverExited.RemoveListener(Unhover);
-        interactor.selectEntered.RemoveListener(Grab);
-        interactor.selectExited.RemoveListener(Ungrab);
+        interactor.selectEntered.RemoveListener(OnGrab);
+        interactor.selectExited.RemoveListener(OnRelease);
     }
 
-    void Hover(HoverEnterEventArgs e) => handAnimator.SetBool("isHoveringHilt", true);
-    void Unhover(HoverExitEventArgs e) => handAnimator.SetBool("isHoveringHilt", false);
-    void Grab(SelectEnterEventArgs e) => handAnimator.SetBool("isGrabbing", true);
-    void Ungrab(SelectExitEventArgs e) => handAnimator.SetBool("isGrabbing", false);
+    void OnGrab(SelectEnterEventArgs args)
+    {
+        string itemName = args.interactableObject.transform.name.Replace("(Clone)", "");
+        string triggerName = GetTriggerName(itemName);
+        animator.SetTrigger(triggerName);
+        animator.SetBool("isGrabbing", true);
+    }
+
+    void OnRelease(SelectExitEventArgs args)
+    {
+        animator.SetBool("isGrabbing", false);
+    }
+
+    string GetTriggerName(string item)
+    {
+        item = item.ToLower();
+        if (item.Contains("afwasborstel")) return "GrabAfwasborstel";
+        if (item.Contains("gieters")) return "GrabGieters";
+        if (item.Contains("papierprop") || item.Contains("papier")) return "GrabPapierProp";
+        if (item.Contains("bordvies") || item.Contains("bord")) return "GrabBordVies";
+        if (item.Contains("boek")) return "GrabBoek";
+        // Add more items as needed
+        return "GrabGeneric"; // Fallback - add this state too
+    }
 }
