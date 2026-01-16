@@ -2,16 +2,13 @@ using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Interactors;
 
-public class ObjectGrabAnimator : MonoBehaviour
+public class RightHandGrabAnimator : MonoBehaviour
 {
-    Animator animator;
+    [SerializeField] Animator animator;
+
     XRBaseInteractor interactor;
 
-    void Awake()
-    {
-        animator = GetComponent<Animator>();
-        interactor = GetComponent<XRBaseInteractor>();
-    }
+    void Awake() => interactor = GetComponent<XRBaseInteractor>();
 
     void OnEnable()
     {
@@ -27,9 +24,9 @@ public class ObjectGrabAnimator : MonoBehaviour
 
     void OnGrab(SelectEnterEventArgs args)
     {
-        string itemName = args.interactableObject.transform.name.Replace("(Clone)", "");
-        string triggerName = GetTriggerName(itemName);
-        animator.SetTrigger(triggerName);
+        string tag = args.interactableObject.transform.tag;
+
+        animator.SetTrigger(GetTriggerFromTag(tag));
         animator.SetBool("isGrabbing", true);
     }
 
@@ -38,15 +35,19 @@ public class ObjectGrabAnimator : MonoBehaviour
         animator.SetBool("isGrabbing", false);
     }
 
-    string GetTriggerName(string item)
+    string GetTriggerFromTag(string tag)
     {
-        item = item.ToLower();
-        if (item.Contains("afwasborstel")) return "GrabAfwasborstel";
-        if (item.Contains("gieters")) return "GrabGieters";
-        if (item.Contains("papierprop") || item.Contains("papier")) return "GrabPapierProp";
-        if (item.Contains("bordvies") || item.Contains("bord")) return "GrabBordVies";
-        if (item.Contains("boek")) return "GrabBoek";
-        // Add more items as needed
-        return "GrabGeneric"; // Fallback - add this state too
+        tag = tag.ToLower();
+        return tag switch
+        {
+            "Afwasborstel" => "GrabAfwasborstel",
+            "Gieters" => "GrabGieters",
+            "Papier" => "GrabPapierProp",
+            "Bord" => "GrabBord",
+            "Boek" => "GrabBoek",
+            "Kleren" => "GrabKleren",
+            "Prullen" => "GrabPrullen",
+            _ => "GrabGeneric" // fallback
+        };
     }
 }

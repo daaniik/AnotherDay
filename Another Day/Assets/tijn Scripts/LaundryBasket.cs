@@ -8,7 +8,7 @@ public class LaundryBasket : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (!other.CompareTag("Clothing") || currentIndex >= dropPoints.Length) return;
+        if (!other.CompareTag("Kleren") || currentIndex >= dropPoints.Length) return;
 
         GameObject clothing = other.gameObject;
 

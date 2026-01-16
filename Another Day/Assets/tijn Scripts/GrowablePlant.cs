@@ -10,7 +10,7 @@ public class GrowablePlant : MonoBehaviour
 
     void OnTriggerStay(Collider other)
     {
-        if (other.CompareTag("WateringCan"))
+        if (other.CompareTag("Gieters"))
         {
             timer += Time.deltaTime;
             if (timer >= waterTimeNeeded)
@@ -24,7 +24,7 @@ public class GrowablePlant : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("WateringCan"))
+        if (other.CompareTag("Gieters"))
             timer = 0f;
     }
 }

@@ -9,6 +9,12 @@ TagManager:
   - Clothing
   - WateringCan
   - Trash
+  - Gieters
+  - Afwasborstel
+  - Papier
+  - Bord
+  - Kleren
+  - Prullen
   layers:
   - Default
   - TransparentFX
