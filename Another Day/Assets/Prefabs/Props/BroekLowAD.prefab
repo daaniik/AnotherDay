@@ -56,8 +56,33 @@ PrefabInstance:
       propertyPath: m_Name
       value: BroekLowAD
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 472193d0d42df8847aea84f1cf274761, type: 3}
+      propertyPath: m_TagString
+      value: Kleren
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 472193d0d42df8847aea84f1cf274761, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -8724056792737536493}
   m_SourcePrefab: {fileID: 100100000, guid: 472193d0d42df8847aea84f1cf274761, type: 3}
+--- !u!1 &6356532601846251489 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 472193d0d42df8847aea84f1cf274761, type: 3}
+  m_PrefabInstance: {fileID: 6122530894620197552}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-8724056792737536493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6356532601846251489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acd6afd9ce2f29e44a4a92ff3dbe5cf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SimpleClothesSwap
+  cleanVersion: {fileID: 5584470637072024763, guid: bb8122c1cce71cc44ba796ec12684372, type: 3}

@@ -56,8 +56,33 @@ PrefabInstance:
       propertyPath: m_Name
       value: ShirtLowAD
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 85f6d52267da1ff4783734cf62f7da66, type: 3}
+      propertyPath: m_TagString
+      value: Kleren
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 85f6d52267da1ff4783734cf62f7da66, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8486831712033041441}
   m_SourcePrefab: {fileID: 100100000, guid: 85f6d52267da1ff4783734cf62f7da66, type: 3}
+--- !u!1 &5373856199901206832 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 85f6d52267da1ff4783734cf62f7da66, type: 3}
+  m_PrefabInstance: {fileID: 5067302110755382369}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8486831712033041441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5373856199901206832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acd6afd9ce2f29e44a4a92ff3dbe5cf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SimpleClothesSwap
+  cleanVersion: {fileID: 9108039826138511672, guid: 0cb42000bd0000c4499fa2209c0afd28, type: 3}
