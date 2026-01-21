@@ -1386,6 +1386,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51fad009cba1299478dfaa7f6dac8b50, type: 3}
+--- !u!1001 &5582339933717418941
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 143634365770916920, guid: 7307e1422789aa544a99b023a3e70681, type: 3}
+      propertyPath: m_Name
+      value: Alarmclock with time
+      objectReference: {fileID: 0}
+    - target: {fileID: 771692361848733314, guid: 7307e1422789aa544a99b023a3e70681, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.043929
+      objectReference: {fileID: 0}
+    - target: {fileID: 771692361848733314, guid: 7307e1422789aa544a99b023a3e70681, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.05572164
+      objectReference: {fileID: 0}
+    - target: {fileID: 771692361848733314, guid: 7307e1422789aa544a99b023a3e70681, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.065
+      objectReference: {fileID: 0}
+    - target: {fileID: 771692361848733314, guid: 7307e1422789aa544a99b023a3e70681, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 771692361848733314, guid: 7307e1422789aa544a99b023a3e70681, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 771692361848733314, guid: 7307e1422789aa544a99b023a3e70681, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 771692361848733314, guid: 7307e1422789aa544a99b023a3e70681, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 771692361848733314, guid: 7307e1422789aa544a99b023a3e70681, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 771692361848733314, guid: 7307e1422789aa544a99b023a3e70681, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 771692361848733314, guid: 7307e1422789aa544a99b023a3e70681, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7307e1422789aa544a99b023a3e70681, type: 3}
 --- !u!1001 &5643679294148197696
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1500,63 +1557,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f7256bc343b33945b434c57a02b83bd, type: 3}
---- !u!1001 &7606982235524636949
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 8586447084770728103, guid: a8c7f9db532b2ed4eae201e765bb978c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -4.043929
-      objectReference: {fileID: 0}
-    - target: {fileID: 8586447084770728103, guid: a8c7f9db532b2ed4eae201e765bb978c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.05572164
-      objectReference: {fileID: 0}
-    - target: {fileID: 8586447084770728103, guid: a8c7f9db532b2ed4eae201e765bb978c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 2.065
-      objectReference: {fileID: 0}
-    - target: {fileID: 8586447084770728103, guid: a8c7f9db532b2ed4eae201e765bb978c, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8586447084770728103, guid: a8c7f9db532b2ed4eae201e765bb978c, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8586447084770728103, guid: a8c7f9db532b2ed4eae201e765bb978c, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8586447084770728103, guid: a8c7f9db532b2ed4eae201e765bb978c, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8586447084770728103, guid: a8c7f9db532b2ed4eae201e765bb978c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8586447084770728103, guid: a8c7f9db532b2ed4eae201e765bb978c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8586447084770728103, guid: a8c7f9db532b2ed4eae201e765bb978c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8962973108520796701, guid: a8c7f9db532b2ed4eae201e765bb978c, type: 3}
-      propertyPath: m_Name
-      value: Alarmclock with time
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a8c7f9db532b2ed4eae201e765bb978c, type: 3}
 --- !u!1001 &7909816291666452162
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1757,4 +1757,4 @@ SceneRoots:
   - {fileID: 1295627707079734794}
   - {fileID: 5437535845925461969}
   - {fileID: 1383894965}
-  - {fileID: 7606982235524636949}
+  - {fileID: 5582339933717418941}
